@@ -43,11 +43,11 @@ function Landing({ setSelectedPage }) {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <p className="text-6xl font-playfair z-10 text-center md:text-start">
+          <p className="text-6xl font-playfair z-10 text-center md:text-start ml-[-5px]">
             Dylan
             <span
               className="xs:relative xs:text-gray xs:font-semibold z-20 
-              before:absolute before:-left-[25px] before:-top-[70px] before:z-[-1]"
+              before:absolute before:-left-[25px] before:-top-[70px] before:z-[-1] text-center"
             >
               Matthews
             </span>
