@@ -5,13 +5,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        blue: "#2CBCE9",
-        red: "#DC4492",
-        yellow: "#FDCC49",
-        grey: "#ededed",
-        "deep-blue": "#010026",
-        "dark-grey": "#757575",
-        "opaque-black": "rgba(0,0,0,0.35)",
+        black: "#000000",
+        white: "#FFFFFF",
+        gray: "#9999A1",
       },
       backgroundImage: (theme) => ({
         "gradient-rainbow":
@@ -26,6 +22,7 @@ module.exports = {
       },
       content: {
         brush: "url('./assets/brush.png')",
+        namebg: "url('./assets/name-bg.png')",
         person1: "url('./assets/person-1.png')",
         person2: "url('./assets/person-2.png')",
         person3: "url('./assets/person-3.png')",

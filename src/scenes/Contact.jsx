@@ -17,7 +17,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-48">
+    <section id="contact" className="pt-24 xs:py-48 text-white">
       {/* HEADINGS */}
       <motion.div
         className="flex justify-end w-full"
@@ -31,8 +31,8 @@ const Contact = () => {
         }}
       >
         <div>
-          <p className="font-playfair font-semibold text-4xl">
-            <span className="text-yellow">CONTACT ME</span> TO GET STARTED
+          <p className="font-playfair font-semibold text-4xl text-gray">
+            <span className="text-white">CONTACT ME</span> TO GET STARTED
           </p>
           <div className="flex md:justify-end my-5">
             <LineGradient width="w-1/2 mr-3.5" />
@@ -74,7 +74,7 @@ const Contact = () => {
             method="POST"
           >
             <input
-              className="w-full bg-blue font-semibold placeholder-opaque-black p-3"
+              className={formStyles}
               type="text"
               placeholder="NAME"
               {...register("name", {
@@ -83,14 +83,14 @@ const Contact = () => {
               })}
             />
             {errors.name && (
-              <p className="text-red mt-1">
+              <p className="text-gray mt-1">
                 {errors.name.type === "required" && "This field is required."}
                 {errors.name.type === "maxLength" && "Max length is 100 char."}
               </p>
             )}
 
             <input
-              className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
+              className={formStyles}
               type="text"
               placeholder="EMAIL"
               {...register("email", {
@@ -99,14 +99,14 @@ const Contact = () => {
               })}
             />
             {errors.email && (
-              <p className="text-red mt-1">
+              <p className="text-gray mt-1">
                 {errors.name.type === "required" && "This field is required."}
                 {errors.name.type === "pattern" && "Invalid email address."}
               </p>
             )}
 
             <textarea
-              className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
+              className={formStyles}
               type="text"
               placeholder="MESSAGE"
               rows="4"
@@ -117,7 +117,7 @@ const Contact = () => {
               })}
             />
             {errors.message && (
-              <p className="text-red mt-1">
+              <p className="text-gray mt-1">
                 {errors.name.type === "required" && "This field is required."}
                 {errors.name.type === "maxLength" && "Max length is 2000 char."}
               </p>
@@ -125,7 +125,7 @@ const Contact = () => {
 
             <button
               type="submit"
-              className="p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500"
+              className="p-5 bg-black font-semibold text-white mt-5 hover:bg-gray hover:text-white transition duration-500 border border-gray"
             >
               SEND ME A MESSAGE
             </button>
@@ -135,5 +135,8 @@ const Contact = () => {
     </section>
   );
 };
+
+const formStyles =
+  "w-full bg-black hover:bg-gray font-semibold placeholder-white p-3 mt-5 transition duration-500 border border-gray";
 
 export default Contact;

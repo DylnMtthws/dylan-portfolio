@@ -1,9 +1,11 @@
+import { FaGithub } from "react-icons/fa6";
+
 const SocialMediaIcons = () => {
   return (
     <div className="flex justify-center md:justify-start my-10 gap-7">
       <a
         className="hover:opacity-50 transition duration-500"
-        href="https://www.linkedin.com"
+        href="https://www.linkedin.com/in/dylnmtthws"
         target="_blank"
         rel="noreferrer"
       >
@@ -11,13 +13,13 @@ const SocialMediaIcons = () => {
       </a>
       <a
         className="hover:opacity-50 transition duration-500"
-        href="https://www.twitter.com"
+        href="https://github.com/DylnMtthws"
         target="_blank"
         rel="noreferrer"
       >
-        <img alt="twitter-link" src="/twitter.png" />
+        <FaGithub size={32} />
       </a>
-      <a
+      {/* <a
         className="hover:opacity-50 transition duration-500"
         href="https://www.facebook.com"
         target="_blank"
@@ -32,7 +34,7 @@ const SocialMediaIcons = () => {
         rel="noreferrer"
       >
         <img alt="instagram-link" src="/instagram.png" />
-      </a>
+      </a> */}
     </div>
   );
 };

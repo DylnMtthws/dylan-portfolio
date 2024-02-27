@@ -14,7 +14,7 @@ function Landing({ setSelectedPage }) {
       {/* IMAGE SECTION */}
       <div className="md:order-2 flex justify-center basis-3/5 z-10 mt-16 md:mt-32">
         {isAboveMediumScreens ? (
-          <div className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-t-[400px] before:w-full before:max-w-[400px] before:h-full before:border-2 before:border-blue before:z-[-1]">
+          <div className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-t-[400px] before:w-full before:max-w-[400px] before:h-full before:border-2 before:border-white before:z-[-1]">
             <img
               alt="profile"
               src="/profile-image.png"
@@ -44,17 +44,21 @@ function Landing({ setSelectedPage }) {
           }}
         >
           <p className="text-6xl font-playfair z-10 text-center md:text-start">
-            Jane {""}
+            Dylan
             <span
-              className="xs:relative xs:text-deep-blue xs:font-semibold z-20 xs:before:content-brush
+              className="xs:relative xs:text-gray xs:font-semibold z-20 
               before:absolute before:-left-[25px] before:-top-[70px] before:z-[-1]"
             >
-              Esper
+              Matthews
             </span>
           </p>
           <p className="mt-10 mb-7 text-sm text-center md:text-start">
-            Adipiscing arcu, in aliquam fringilla cursus. Elit arcu elementum
-            viverra malesuada sem ac faucibus dolor. Sagittis scelerisque.
+            <span className="text-gray">
+              Bridging the gap between data and users with
+            </span>
+            <span className="text-white"> intuitive interfaces</span>{" "}
+            <span className="text-gray">that unlock the power of</span>{" "}
+            <span className="text-white">efficient data pipelines.</span>
           </p>
         </motion.div>
 
@@ -71,18 +75,18 @@ function Landing({ setSelectedPage }) {
           }}
         >
           <AnchorLink
-            className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold hover:bg-blue hover:text-white transition duration-500"
+            className="bg-white text-black rounded-sm py-3 px-7 font-semibold hover:bg-gray hover:text-white transition duration-500"
             onClick={() => setSelectedPage("contact")}
             href="#contact"
           >
             Contact Me
           </AnchorLink>
           <AnchorLink
-            className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5"
+            className="rounded-r-sm bg-white hover:bg-gray py-0.5 pr-0.5 transition duration-500"
             onClick={() => setSelectedPage("contact")}
             href="#contact"
           >
-            <div className="bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center justify-center font-playfair px-10">
+            <div className="bg-black hover:text-gray transition duration-500 w-full h-full flex items-center justify-center font-playfair px-10">
               Let's talk.
             </div>
           </AnchorLink>

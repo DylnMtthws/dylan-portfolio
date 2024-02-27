@@ -25,7 +25,7 @@ function App() {
   }, []);
 
   return (
-    <div className="app bg-deep-blue">
+    <div className="app bg-black">
       <Navbar
         isTopOfPage={isTopOfPage}
         selectedPage={selectedPage}
@@ -40,19 +40,19 @@ function App() {
         )}
         <Landing setSelectedPage={setSelectedPage} />
       </div>
-      <LineGradient />
+      {isAboveMediumScreens && <LineGradient />}
       <div className="w-5/6 mx-auto md:h-full">
         <MySkills />
       </div>
-      <LineGradient />
+      {isAboveMediumScreens && <LineGradient />}
       <div className="w-5/6 mx-auto">
         <Projects />
       </div>
-      <LineGradient />
-      <div className="w-5/6 mx-auto md:h-full">
+      {isAboveMediumScreens && <LineGradient />}
+      {/* <div className="w-5/6 mx-auto md:h-full">
         <Testimonials />
-      </div>
-      <LineGradient />
+      </div> */}
+      {isAboveMediumScreens && <LineGradient />}
       <div className="w-5/6 mx-auto md:h-full">
         <Contact />
       </div>
