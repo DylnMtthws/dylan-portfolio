@@ -72,8 +72,9 @@ const Projects = () => {
           variants={container}
         >
           {/* ROW 1 */}
-          <div className="flex justify-center text-center items-center p-10 bg-black max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold text-gray">
-            BEAUTIFUL <span className="text-white">USER</span> INTERFACES
+          <div className="flex justify-center text-center items-center p-10 bg-black max-w-[400px] max-h-[400px] text-2xl font-playfair  text-gray">
+            BEAUTIFUL <span className="text-white font-semibold">USER</span>{" "}
+            INTERFACES
           </div>
           <Project title="Project 1" />
           <Project title="Project 2" />
@@ -86,8 +87,9 @@ const Projects = () => {
           {/* ROW 3 */}
           <Project title="Project 6" />
           <Project title="Project 7" />
-          <div className="flex justify-center text-center items-center p-10 bg-black max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold text-gray">
-            ACCESSIBLE<span className="text-white">DATA</span>PIPELINES
+          <div className="flex justify-center text-center items-center p-10 bg-black max-w-[400px] max-h-[400px] text-2xl font-playfair text-gray">
+            ACCESSIBLE<span className="text-white font-semibold">DATA</span>
+            PIPELINES
           </div>
         </motion.div>
       </div>

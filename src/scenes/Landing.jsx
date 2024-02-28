@@ -52,7 +52,7 @@ function Landing({ setSelectedPage }) {
               Matthews
             </span>
           </p>
-          <p className="mt-10 mb-7 text-sm text-center md:text-start">
+          <p className="mt-10 mb-7 text-med text-center md:text-start">
             <span className="text-gray">
               Bridging the gap between data and users with
             </span>

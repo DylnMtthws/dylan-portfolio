@@ -35,11 +35,11 @@ const MySkills = () => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <p className="font-playfair font-semibold text-4xl mb-5 text-gray">
-            MY <span className="text-white">SKILLS</span>
+          <p className="font-playfair text-4xl mb-5 text-gray">
+            MY <span className="text-white font-semibold">SKILLS</span>
           </p>
           <LineGradient width="w-1/3" />
-          <p className="mt-10 mb-7 text-gray">
+          <p className="mt-10 mb-7 text-gray text-lg">
             <span className="font-bold text-white">
               I wasn't always crafting lines of code, but I've always thrived in
               problem-solving roles.
