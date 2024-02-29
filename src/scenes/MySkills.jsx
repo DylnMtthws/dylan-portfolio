@@ -6,15 +6,8 @@ import {
   faJsSquare,
   faReact,
   faPython,
-  faGithub,
 } from "@fortawesome/free-brands-svg-icons";
-import {
-  SiExpo,
-  SiFlask,
-  SiMysql,
-  SiTailwindcss,
-  SiTypescript,
-} from "react-icons/si";
+import { SiExpo, SiFlask, SiTailwindcss, SiTypescript } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import { TbBrandReactNative } from "react-icons/tb";
 
@@ -86,9 +79,12 @@ const MySkills = () => {
             <div className="w-1/2 md:w-3/4 h-32 xs:bg-gray absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            From optimizing logistics at a global company to leading a startup
-            team, I've fostered a skillset that is now propelling me into the
-            future as a software engineer.
+            Through optimizing logistics at a global company and leading a
+            scrappy startup team, I've fostered a diverse skillset{" "}
+            <span className="text-gray">
+              (data analysis, CX design, adapability, project management)
+            </span>{" "}
+            that is now propelling me into the future as a software engineer.
           </p>
         </motion.div>
         {/* INNOVATIVE */}
@@ -171,9 +167,10 @@ const MySkills = () => {
             <div className="w-1/2 md:w-3/4 h-32 xs:bg-gray absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            From leading a large non-profit to building a startup, I honed my
-            strategic leadership, communication efficacy, and collaborative
-            spirit – all assets in the software engineering world.
+            Helping lead a large non-profit and building a startup allowed me to
+            develop strong strategic leadership, effective communication, and
+            collaboration skills – assets that prove valuable in the software
+            engineering world.
           </p>
         </motion.div>
       </div>
